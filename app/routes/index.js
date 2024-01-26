@@ -4,7 +4,11 @@ var router = express.Router();
 
 module.exports=()=>{
   router.get('/',function(req,res,next){
-    res.render('index', { title: 'Tara lava'})
+    res.render('authentification/signin')
+  })
+
+  router.get('/signup',function(req,res,next){
+    res.render('authentification/signup')
   })
 
   return router
