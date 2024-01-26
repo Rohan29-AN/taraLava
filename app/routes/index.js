@@ -11,6 +11,10 @@ module.exports=()=>{
     res.render('authentification/signup')
   })
 
+  router.get('/dashboard',function(req,res,next){
+    res.render('dashboard/index')
+  })
+
   return router
 }
 
